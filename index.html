@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Estética y Spa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Estética & Spa</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Explora nuestros productos y servicios para el cuidado de tu belleza y bienestar.</p>
+    </section>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="producto">
+            <h3>Crema hidratante</h3>
+            <p>Descripción breve del producto.</p>
+            <button onclick="redirigirWhatsApp('Crema hidratante')">Comprar en WhatsApp</button>
+        </div>
+        <div class="producto">
+            <h3>Mascarilla facial</h3>
+            <p>Descripción breve del producto.</p>
+            <button onclick="redirigirWhatsApp('Mascarilla facial')">Comprar en WhatsApp</button>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Ofrecemos tratamientos faciales y corporales para tu bienestar.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, contáctanos al <strong>+123 456 789</strong>.</p>
+    </section>
+
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <p>Nos encontramos en: Av. Belleza 123, Ciudad Spa.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Estética & Spa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function redirigirWhatsApp(producto) {
+            const numero = "123456789";  // Reemplazar con el número de WhatsApp
+            const mensaje = `Hola, estoy interesado en el producto: ${producto}`;
+            window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
